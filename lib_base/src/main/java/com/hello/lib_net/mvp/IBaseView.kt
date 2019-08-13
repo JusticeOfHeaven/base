@@ -1,5 +1,6 @@
-package com.hello.lib_net.net
+package com.hello.lib_net.mvp
 
+import android.arch.lifecycle.Lifecycle
 import android.content.Context
 
 /**
@@ -15,5 +16,7 @@ interface IBaseView<T : IBasePresenter> {
      * 判断Activity、Fragment是否回收
      */
     fun isRecycled(): Boolean
+
+    fun getLifecycle(): Lifecycle
 
 }

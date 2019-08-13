@@ -1,4 +1,4 @@
-package com.hello.lib_net.net
+package com.hello.lib_net.mvp
 
 /**
  * Create by jzhan on 2019/7/11
