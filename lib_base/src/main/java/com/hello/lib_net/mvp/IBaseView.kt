@@ -1,7 +1,7 @@
 package com.hello.lib_net.mvp
 
-import android.arch.lifecycle.Lifecycle
 import android.content.Context
+import androidx.lifecycle.Lifecycle
 
 /**
  * Create by jzhan on 2019/7/11

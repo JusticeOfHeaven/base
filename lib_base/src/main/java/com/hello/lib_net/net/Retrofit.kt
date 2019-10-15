@@ -1,6 +1,6 @@
 package com.hello.lib_net.net
 
-import android.support.v4.util.ArrayMap
+import androidx.collection.ArrayMap
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

@@ -35,7 +35,17 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    api (
+            rootProject.ext.deps.supportV4,
+            rootProject.ext.deps.appcompatV7,
+            rootProject.ext.deps.design,
+            rootProject.ext.deps.cardview,
+            rootProject.ext.deps.annotations,
+            rootProject.ext.deps.recyclerview,
+            rootProject.ext.deps.gridlayout,
+            rootProject.ext.deps.percent,
+            rootProject.ext.deps.constraint
+    )
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     // Rxjava2
@@ -49,6 +59,10 @@ dependencies {
     api "com.squareup.retrofit2:retrofit:$retrofit2"
     api "com.squareup.retrofit2:adapter-rxjava2:$retrofit2"
     api "com.squareup.retrofit2:converter-gson:$retrofit2"
+    // Glide
+    api "com.github.bumptech.glide:glide:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+
 
 
 }
